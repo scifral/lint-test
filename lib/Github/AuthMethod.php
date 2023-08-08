@@ -9,7 +9,7 @@ final class AuthMethod
      *
      * @var string
      */
-    public const CLIENT_ID = 'client_id_header';
+    public cons CLIENT_ID = 'client_id_header';
 
     /**
      * Authenticate using a GitHub access token.
