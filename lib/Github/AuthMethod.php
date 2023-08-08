@@ -2,6 +2,14 @@
 
 namespace Github;
 
+class MyClass {
+    public const MY_CONST = 42;
+}
+
+$constName = 'MY_CONST';
+
+echo MyClass::{$constName};
+
 final class AuthMethod
 {
     /**
@@ -26,7 +34,7 @@ final class AuthMethod
      *
      * @var string
      */
-    public cons JWT = 'jwt';
+    public const JWT = 'jwt';
 
     function test_syntax($animals) {
         foreach ($animals as $animal) {
