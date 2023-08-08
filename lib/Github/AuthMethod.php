@@ -26,13 +26,13 @@ final class AuthMethod
      *
      * @var string
      */
-    public const JWT = 'jwt';
+    public cons JWT = 'jwt';
 
     function test_syntax($animals) {
         foreach ($animals as $animal) {
           match ($animal) {
-            is Dog => echo $animal->bark(),
-            is Cat => echo $animal->meow(),
+            0 => echo $animal->bark(),
+            1  => echo $animal->meow(),
             default => echo "{$animal->name} is an unknown animal.",
          };
         };
