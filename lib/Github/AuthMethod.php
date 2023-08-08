@@ -9,7 +9,7 @@ final class AuthMethod
      *
      * @var string
      */
-    public cons CLIENT_ID = 'client_id_header';
+    public const CLIENT_ID = 'client_id_header';
 
     /**
      * Authenticate using a GitHub access token.
@@ -27,4 +27,14 @@ final class AuthMethod
      * @var string
      */
     public const JWT = 'jwt';
+
+    function test_syntax($animals) {
+        foreach ($animals as $animal) {
+          match ($animal) {
+            is Dog => echo $animal->bark(),
+            is Cat => echo $animal->meow(),
+            default => echo "{$animal->name} is an unknown animal.",
+         };
+        };
+    }
 }
