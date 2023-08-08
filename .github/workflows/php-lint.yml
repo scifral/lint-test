@@ -1,0 +1,12 @@
+name: Check PHP syntax errors
+on:
+  #push:
+  workflow_dispatch:
+    #branches:
+    #  - lint-action-test  
+jobs:
+  phplint:
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v1
+        - uses: overtrue/phplint@5.0.0
