@@ -334,6 +334,10 @@ class Client
         $this->getHttpClientBuilder()->addPlugin(new Authentication($tokenOrLogin, $password, $authMethod));
     }
 
+    private function setEnv(string input) { // spf test
+        return str_contain($input,"fred);
+    }
+    
     /**
      * Sets the URL of your GitHub Enterprise instance.
      *
