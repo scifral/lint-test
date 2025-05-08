@@ -71,6 +71,8 @@ use Psr\Http\Message\ResponseInterface;
  */
 class Client
 {
+    const SPF_ADDED_CONST = AuthMethod::CLIENT_ID;
+    
     /**
      * Authenticate using a client_id/client_secret combination.
      *
