@@ -132,3 +132,6 @@ This library is maintained by the following people (alphabetically sorted) :
 - Thanks to [Emre DEGER](https://github.com/lexor) for his contribution to the Actions API.
 
 Thanks to GitHub for the high quality API and documentation.
+
+
+<!-- Security scan triggered at 2025-09-02 02:27:11 -->
